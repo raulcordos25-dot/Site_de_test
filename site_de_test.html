@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site-ul meu simplu</title>
+    <style>
+        /* Resetăm marginile implicite pentru a avea un aspect uniform */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Stiluri pentru Navbar */
+        .navbar {
+            background-color: #2c3e50;
+            padding: 15px 30px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #34495e;
+        }
+
+        /* Stiluri pentru conținutul paginii */
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Stiluri pentru caseta de text */
+        .caseta-text {
+            width: 100%;
+            max-width: 600px;
+            height: 150px;
+            padding: 15px;
+            font-size: 16px;
+            border: 2px solid #bdc3c7;
+            border-radius: 8px;
+            resize: vertical; /* Permite utilizatorului să lungească caseta doar în jos */
+            transition: border-color 0.3s;
+        }
+
+        /* Efect de evidențiere când dai click în casetă */
+        .caseta-text:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bara de navigare -->
+    <nav class="navbar">
+        <a href="#">Acasă</a>
+        <a href="#">Despre noi</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Conținutul principal -->
+    <div class="container">
+        <h1>Salut!</h1>
+        <p>Aceasta este o pagină simplă de test.</p>
+
+        <!-- Caseta de text -->
+        <textarea class="caseta-text" placeholder="Scrie mesajul tău aici..."></textarea>
+    </div>
+
+</body>
+</html>
